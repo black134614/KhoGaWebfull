@@ -1,0 +1,140 @@
+﻿@model KhoGaWebfull.Models.Oder
+
+<div>
+    <h4>Oder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProductID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaymentID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaymentID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipingID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipingID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsComfirm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsComfirm)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComfirmDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComfirmDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSend)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSend)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SendDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SendDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsCompleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsCompleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompletedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompletedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsCancel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsCancel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CancelDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CancelDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CancelNote)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CancelNote)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OderID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
