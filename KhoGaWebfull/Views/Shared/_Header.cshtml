@@ -2,7 +2,7 @@
     <div class="header__topbar bg__primary">
         <div class="container">
             <div class="header__topbar--inner text-center">
-                <p class="header__info--text text-white">FREE SHIPPING FOR ORDERS OVER $59 !</p>
+                <p class="header__info--text text-white">Đang có khuyến mãi Hot mùa noel! Giảm 10% cho đơn hàng trên 500k!</p>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@
                                     @{
                                         foreach (KhoGaWebfull.Models.Category item in ViewBag.Category)
                                         {
-                                            var url = "home/" + item.Title + "-" + item.CategoryID;
+                                            var url = "Product/Index/" + item.Title + "/" + item.CategoryID;
                                             <li class="header__sub--menu__items"><a href="@url" class="header__sub--menu__link">@item.Title</a></li>
                                         }
                                     }

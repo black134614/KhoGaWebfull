@@ -14,8 +14,10 @@ namespace KhoGaWebfull.Controllers
     {
         DBEntities db = new DBEntities();
         // GET: Product
-        public async Task<ActionResult> Index(int CategoryID)
+        public async Task<ActionResult> Index(String Title, int? CategoryID)
         {
+            ViewBag.PageTitle = Title;
+
             var productList = await db.Products.Where(x => x.CategoryID == CategoryID && x.Status == true && x.ProductAvailable == true)
                 .Join(db.Categories,
                 x => x.CategoryID,
@@ -34,9 +36,8 @@ namespace KhoGaWebfull.Controllers
                     Detail = x.Product.Detail,
                     PicturePath = x.Product.PicturePath,
                     UnitOldPrice = (double)x.Product.UnitPrice + (double)x.Product.Discount
-
                 }).ToListAsync();
-
+            ViewBag.CountResult = productList.Count();
             return View(productList);
         }
         public async Task<ActionResult> ProductDetail(int CategoryID, int ProductID)

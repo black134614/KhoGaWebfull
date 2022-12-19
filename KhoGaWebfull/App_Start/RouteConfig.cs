@@ -17,11 +17,10 @@ namespace KhoGaWebfull
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-
             routes.MapRoute(
-                name: "Product",
-                url: "{CategoryTitle}-{CategoryID}",
-                defaults:new { controller = "Product", action = "Index", CategoryID = UrlParameter.Optional }
+                name: "Default1",
+                url: "{controller}/{action}/{Title}/{CategoryID}",
+                defaults:new { controller = "Product", action = "Index", CategoryID = UrlParameter.Optional, Title = UrlParameter.Optional }
             );
 
             routes.MapRoute(

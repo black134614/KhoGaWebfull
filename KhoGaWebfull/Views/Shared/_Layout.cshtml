@@ -355,9 +355,17 @@
     <script src="~/assets/js/plugins/swiper-bundle.min.js"></script>
     <script src="~/assets/js/plugins/glightbox.min.js"></script>
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="~/assets/js/plugins/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.money').mask('#.###đ', { reverse: true });
+            $('.quantity').mask('000,000,000', { reverse: true });
+        });
+    </script>
     <!-- Customscript js -->
-    <script src="~/assets/js/script.js"></script>
 
     @RenderSection("scripts", required: false)
+    <script src="~/assets/js/script.js"></script>
 </body>
 </html>

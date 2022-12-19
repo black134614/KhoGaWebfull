@@ -1,4 +1,4 @@
-/*
+﻿/*
   Template Name: Becute - Jewelry, Cosmetics and Beauty eCommerce HTML Template
   Author Name: Hook theme
   Author URL: https://themeforest.net/user/hooktheme
@@ -1006,5 +1006,7 @@ const newsletterPopup = function () {
   }
 };
 newsletterPopup();
+
+
 
 

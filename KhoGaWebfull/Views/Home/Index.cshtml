@@ -31,10 +31,13 @@
                                             <img class="shop__collection--img" src="@item.PicturePath" alt="@item.Title">
                                             <h3 class="shop__collection--title">@item.Title</h3>
                                             <div class="product__card--price">
-                                                <span class="current__price">@item.UnitPrice</span>
-                                                <span class="old__price">@productPrice</span>
+                                                <span class="current__price money">@item.UnitPrice</span>
+                                                <span class="old__price money">@productPrice</span>
                                             </div>
-                                            <span class="shop__collection--subtitle">@item.UnitInStock</span>
+                                            <div class="shop__collection--subtitle">
+                                                <span>Số lượng:</span>
+                                                <span class="quantity">@item.UnitInStock</span>
+                                            </div>
                                         </a>
                                     </div>
                                 </div>
@@ -192,8 +195,8 @@
                                             </ul>
                                             <h3 class="product__card--title"><a href="@url">@item.Title</a></h3>
                                             <div class="product__card--price">
-                                                <span class="current__price">@item.UnitPrice</span>
-                                                <span class="old__price">@productPrice</span>
+                                                <span class="current__price money">@item.UnitPrice</span>
+                                                <span class="old__price money">@productPrice</span>
                                             </div>
                                         </div>
                                     </article>
@@ -207,7 +210,7 @@
                     }
                 </div>
                 <div class="product__load--more text-center">
-                    <a class="load__more--btn primary__btn" href="shop.html">Load More</a>
+                    <a class="load__more--btn primary__btn" href="shop.html">Xem thêm</a>
                 </div>
             </div>
         </div>
